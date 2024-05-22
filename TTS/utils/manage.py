@@ -262,7 +262,7 @@ class ModelManager(object):
             elif file_name == "config.json":
                 config_file = os.path.join(output_path, file_name)
         if model_file is None:
-            raise ValueError(" [!] Model file not found in the output path")
+            raise ValueError(f" [!] Model file not found in the output path {output_path}")
         if config_file is None:
             raise ValueError(" [!] Config file not found in the output path")
         return model_file, config_file
